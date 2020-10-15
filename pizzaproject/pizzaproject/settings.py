@@ -133,7 +133,11 @@ if DEBUG is True:
     MEDIA_URL = '/media/'
     MEDIA_ROOT = Path(BASE_DIR, 'media')
 else:
-    STATIC_URL = '/var/www/venv/BookProject-Copy/pizzaproject/static/'
+    STATIC_URL = '/static/'
+    STATICFILES_DIRS = [
+    
+    '/var/www/venv/BookProject-Copy/pizzaproject/static/',
+]
     STATIC_ROOT = '/var/www/venv/BookProject-Copy/pizzaproject/static/'
     MEDIA_URL = '/media/'
     MEDIA_ROOT = Path(BASE_DIR, '/var/www/venv/BookProject-Copy/pizzaproject/media/')
