@@ -128,12 +128,12 @@ if DEBUG is True:
     STATIC_URL = '/static/'
     STATIC_ROOT = '/static/'
     STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static")
+    Path.join(BASE_DIR, "static")
     ]
     MEDIA_URL = '/media/'
-    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+    MEDIA_ROOT = Path.join(BASE_DIR, 'media')
 else:
     STATIC_URL = '/static/'
     STATIC_ROOT = '/var/www/venv/BookProject-Copy/pizzaproject/static/'
     MEDIA_URL = '/media/'
-    MEDIA_ROOT = os.path.join(BASE_DIR, '/var/www/venv/BookProject-Copy/pizzaproject/media/')
+    MEDIA_ROOT = Path.join(BASE_DIR, '/var/www/venv/BookProject-Copy/pizzaproject/media/')
